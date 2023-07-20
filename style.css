@@ -2,10 +2,10 @@ body {
   margin: 0;
 }
 
-.container {
+img {
   width: 100%;
 }
 
-img {
-  width: 100%;
+#select-wrapper {
+  margin: 1em;
 }
