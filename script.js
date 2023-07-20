@@ -22,4 +22,10 @@ addOption(1);
 
 logoSelect.addEventListener("change", (event) => {
   logoImage.src = `logo-${logoSelect.value}.png`;
+  localStorage.setItem("logo-id", logoSelect.value);
 });
+
+const storedLogoID = localStorage.getItem("logo-id");
+if (storedLogoID) {
+  logoImage.src = `logo-${storedLogoID}.png`;
+}
